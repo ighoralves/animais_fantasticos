@@ -1,0 +1,14 @@
+{
+  "name": "ighor",
+  "version": "1.0.0",
+  "source": "src/index.js",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "parcel watch ./assets/styles/index.scss --public-url ./",
+    "build": "parcel build ./assets/styles/index.scss --public-url ./"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "parcel": "latest"
+  }
+}
