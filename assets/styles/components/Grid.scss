@@ -1,0 +1,67 @@
+.grid-section {
+    grid-column: 2 / 4;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+    gap: 20px;
+    margin-bottom: 4rem;
+
+    .Titulo {
+        font-size: 6rem;
+        line-height: 1;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        grid-column: 1 / 4;
+    }
+
+    .Animais-lista {
+        height: 370px;
+        overflow-y: scroll;
+        grid-column: 2;
+
+        &::-webkit-scrollbar {
+            width: 18px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #fb5;
+            border-left: 4px solid #faf6ed;
+            border-right: 4px solid #faf6ed;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #faf6ed;
+        }
+    }
+
+    .Animais {
+        grid-column: 3;
+        p {
+            font-family: helvetica, Arial;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            margin-bottom: 1rem;
+            color: #e54;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 40px;
+                height: 10px;
+                margin-right: 10px;
+                background: #fb5;
+            }
+        }
+    }
+    
+
+}

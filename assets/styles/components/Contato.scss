@@ -1,0 +1,23 @@
+.Contato {
+    .Map {
+        grid-column: 2;
+    }
+
+    .Dados {
+        grid-column: 3;
+
+        li {
+            margin-bottom: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 10px;
+                display: inline-block;
+                margin-right: 10px;
+                background: #fb5;
+            }
+        }
+    }
+}
